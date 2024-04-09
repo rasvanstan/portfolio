@@ -4,7 +4,7 @@ import '../styles/Contact.css';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function Contact() {
-  const { currentPhotoIndex, photos, changeTheme } = useContext(BackgroundContext);
+  const { currentPhotoIndex, photos } = useContext(BackgroundContext);
   const [prevPhotoIndex, setPrevPhotoIndex] = useState(-1);
 
   useEffect(() => {

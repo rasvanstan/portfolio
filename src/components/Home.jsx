@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useContext, useEffect, useRef } from 'react';
 import BackgroundContext from './BackgroundContext';
 import { gsap } from "gsap";
