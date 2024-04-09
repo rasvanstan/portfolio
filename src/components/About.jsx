@@ -1,5 +1,5 @@
 // About.jsx
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import BackgroundContext from './BackgroundContext';
 
 function About() {

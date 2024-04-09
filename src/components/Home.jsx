@@ -2,6 +2,8 @@
 import { useContext, useEffect, useRef } from 'react';
 import BackgroundContext from './BackgroundContext';
 import { gsap } from "gsap";
+import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Home.css';
+
 
 function Home() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);
@@ -12,15 +14,14 @@ function Home() {
 
     gsap.from(containerElement, {
       scale: 0, // Start with container scaled down
-      duration: 2,
+      duration: 5,
       ease: "back.out(1.7)", // Add a bounce effect
-      repeat: 2, // Repeat the animation 2 more times
       yoyo: true, // Reverse animation on each repetition
     });
   }, []);
 
   const openResume = () => {
-    const resumePath = '../src/assets/Razvan_Stan_CV.pdf';
+    const resumePath = '../src/assets/Razvan Stan_CV.pdf';
     window.open(resumePath, '_blank');
   };
 
@@ -49,7 +50,7 @@ function Home() {
         }} ref={containerRef}>
           <img
             className="cv-foto"
-            src="../src/assets/raz4.jpeg"
+            src="../src/assets/raz_b&w.jpeg"
             alt="Your Photo"
             style={{ width: '100%', borderRadius: '50%' }} // Set image width to 100%
           />
@@ -57,16 +58,16 @@ function Home() {
 
         <p style={{ width: '80%', marginTop: '50px' }}>
           Exploring the world of
-          <span style={{ color: '#FFA500', fontWeight: 'bold' }}>
-            Web Development
+          <span className = "web-dev">
+           Web Development
           </span>,
           I've dived into the art of crafting digital experiences. Proficient in
-          <span style={{ fontWeight: 'bold' }}>
+          <span className='skills'>
             HTML, CSS, JavaScript, React, and Node.js
           </span>,
           I'm on a mission to create web solutions that captivate and innovate, blending analytical thinking with a touch of artistry. If you want to learn more about my educational background and past experiences, simply click to view my
           <a href="#" data-replace="get a link" onClick={openResume}>
-            <span style={{ fontWeight: 'bold' }}>
+            <span className='resume'>
               RESUME.
             </span>
           </a>
