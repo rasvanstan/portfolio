@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import BackgroundContext from './BackgroundContext';
 import '../styles/Contact.css';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
