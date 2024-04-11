@@ -26,7 +26,7 @@ function About() {
         }}
       >
         {/* Your about content goes here */}
-        <h1>About Me</h1>
+        <h1>So who am I?</h1>
         <p>This is where you can provide information about yourself.</p>
       </div>
     </div>
