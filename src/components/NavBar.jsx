@@ -3,6 +3,7 @@ import { Link , useNavigate} from 'react-router-dom';
 import { BiHomeAlt2, BiSolidUser, BiSolidContact } from 'react-icons/bi';
 import { HiDesktopComputer } from 'react-icons/hi';
 import BackgroundContext  from './BackgroundContext';
+import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Navbar.css'
 
 function NavBar() {
   const { changeTheme } = useContext(BackgroundContext);
