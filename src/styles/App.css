@@ -2,15 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Exo 2', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-image: url('./assets/backgroundImage.JPG');
+  /* background-image: url('./assets/backgroundImage.JPG');
   background-size: cover;
-  object-fit: cover;
+  object-fit: cover; */
   color: white;
   overflow: hidden;
 }
