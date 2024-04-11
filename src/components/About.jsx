@@ -16,18 +16,24 @@ function About() {
         }}
       />
       <div
+        className='container'
         style={{
           backgroundImage: `url(${photos[currentPhotoIndex]})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           width: '100vw',
-          height:'100vh'
+          height: '100vh'
         }}
       >
-        {/* Your about content goes here */}
-        <h1>So who am I?</h1>
-        <p>This is where you can provide information about yourself.</p>
+        <div className="item">
+          Content for first column
+        </div>
+        <div className="item">          
+          <h1>So who am I?</h1>
+          <p>This is where you can provide information about yourself.</p>
+        </div>
+        <div className="item">Content for third column</div>
       </div>
     </div>
   );
