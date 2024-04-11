@@ -1,7 +1,7 @@
-h1{
+.my-projects {
     padding:4rem;
 }
 
-p {
-    margin-left: 4rem;
-}
+.my-projects h1 {
+    font-size: 4rem;
+} 
