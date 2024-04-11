@@ -1,6 +1,5 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
 
 
 function Footer() {
