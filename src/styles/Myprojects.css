@@ -1,5 +1,6 @@
 .my-projects {
     padding:4rem;
+    display: grid;
 }
 
 .my-projects h1 {
