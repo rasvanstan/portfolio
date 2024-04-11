@@ -1,10 +1,39 @@
-.container {
+.container-about {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
     gap: 20px; /* Gap between grid items */
     padding: 20px; /* Padding around grid container */
   }
   
-  .item {
-  }
-  
+.column1 {
+    width:30%;
+}
+.plane1{
+    width:180%;
+    height:auto;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    transform: rotate(10deg);
+}
+.plane2 {
+    width:150%;
+    height:auto;
+    border-radius: 2rem;
+    margin-left: 20rem;
+    margin-top: -10rem;
+    transform: rotate(-10deg);
+
+}
+
+.plane3 {
+    width:160%;
+    height:auto;
+    border-radius: 2rem;
+    margin-top: -12rem;
+    margin-left: 4rem;
+    transform: rotate(12deg);
+
+}
+
+
