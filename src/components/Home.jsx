@@ -2,6 +2,7 @@
 import { useContext, useEffect, useRef } from 'react';
 import BackgroundContext from './BackgroundContext';
 import { gsap } from "gsap";
+import { FaHtml5 } from "react-icons/fa";
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Home.css';
 
 function Home() {
@@ -70,12 +71,12 @@ function Home() {
             <span className='resume'>
               RESUME.
             </span>
-
           </a>
-        </p>
-      </div>
-      <img src="../src/assets/html.jpeg" alt="" />
+          <FaHtml5 />
 
+        </p>
+
+      </div>
     </div>
   );
 }

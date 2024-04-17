@@ -87,7 +87,14 @@
     flex-direction: row;
   }
   
- 
+  svg {
+    width:2.1rem;
+    height:2.1rem;
+    fill:white;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+    margin:1rem 0 0 1.4rem;
+}
  
   
   .styled-link:hover {
