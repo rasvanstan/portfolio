@@ -1,16 +1,17 @@
 .matrix-container {
     position: relative;
-    width: 100%;
+    width: 150%;
     height: 100%;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    margin-left: -11rem;
    }
    
    .column {
     display: flex;
     flex-direction: column;
-    width: 10%; /* Adjust this value based on how many columns you want */
+    width: 4.5%; /* Adjust this value based on how many columns you want */
     height: 100%;
    }
    
@@ -19,14 +20,14 @@
     color: #0f0;
     font-family: 'Courier New', monospace;
     font-size: 12px;
-    line-height: 0.2;
+    line-height: 1;
     animation: fall 5s linear infinite;
    }
    
    @keyframes fall {
      0% {
        transform: translateY(-100%);
-       opacity: 0.6;
+       opacity: 0.8;
     }
      100% {
        transform: translateY(100vh);

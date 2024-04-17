@@ -13,16 +13,23 @@ const MatrixEffect = ({ numRows, numCols }) => {
       const column = document.createElement('div');
       column.className = 'column';
 
+      const highlight = Math.random() < 0.2; // 20% chance of highlighting
+      if (highlight) {
+        column.classList.add('highlighted');
+      }
+
       for (let j = 0; j < numRows; j++) {
         const char = document.createElement('span');
         char.innerText = characters.charAt(Math.floor(Math.random() * characters.length));
         char.style.animationDelay = `${Math.random() * 5}s`;
-        char.style.opacity = Math.random(); // Random opacity for each character
+
+        // Vary animation speed
+        const speedFactor = Math.random() * 0.5 + 0.5; // Speed between 0.5 and 1.0
+        char.style.animationDuration = `${speedFactor * 5}s`;
+
         column.appendChild(char);
       }
 
-      column.style.animationDelay = `${Math.random() * 5}s`; // Random animation delay for each column
-      column.style.opacity = Math.random(); // Random opacity for each column
       container.appendChild(column);
     }
 
