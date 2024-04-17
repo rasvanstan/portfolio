@@ -2,7 +2,9 @@
 import { useContext, useEffect, useRef } from 'react';
 import BackgroundContext from './BackgroundContext';
 import { gsap } from "gsap";
-import { FaHtml5 } from "react-icons/fa";
+import { SiCss3, SiHtml5, SiNodedotjs,SiMongodb } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Home.css';
 
 function Home() {
@@ -72,8 +74,16 @@ function Home() {
               RESUME.
             </span>
           </a>
-          <FaHtml5 />
+          <br />
+          <div className='skills-icons'>
+          <SiHtml5 />
+          <SiCss3 />
+          <IoLogoJavascript />
+          <FaReact />
+          <SiNodedotjs />
+          <SiMongodb />
 
+          </div>
         </p>
 
       </div>

@@ -87,15 +87,17 @@
     flex-direction: row;
   }
   
-  svg {
+  .skills-icons svg {
     width:2.1rem;
     height:2.1rem;
-    fill:white;
-    margin-left: 1.4rem;
-    margin-top: 1rem;
-    margin:1rem 0 0 1.4rem;
-}
- 
+    fill:#FFA500;
+    margin-right: 1rem;
+  }
+ .skills-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+ }
   
   .styled-link:hover {
     transform: scale(1.3);
