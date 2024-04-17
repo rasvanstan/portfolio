@@ -8,25 +8,25 @@
    }
    
    .column {
-    display: flex; 
-    flex-direction: column; 
-    width: 1vw; /* Adjust this value based on how many columns you want */
-    height: 100%; 
-    margin-right: 1rem;/* Ensure columns take up the full height */
+    display: flex;
+    flex-direction: column;
+    width: 10%; /* Adjust this value based on how many columns you want */
+    height: 100%;
    }
    
    .matrix-container span {
-    position: relative; /* Adjusted from absolute to relative */
+    position: relative;
     color: #0f0;
-    font-family: monospace;
-    font-size: 1.2rem;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 0.2;
     animation: fall 5s linear infinite;
    }
    
    @keyframes fall {
      0% {
        transform: translateY(-100%);
-       opacity: 0.4;
+       opacity: 0.6;
     }
      100% {
        transform: translateY(100vh);
