@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import BackgroundContext from './BackgroundContext';
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/About.css';
+import MatrixEffect from './MatrixEffect';
 
 function About() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);
@@ -54,9 +55,8 @@ function About() {
           </p>
            </div>
         </div>
-        <div className="column3">
-          Content for third column
-
+        <div id = 'matrixCanvas'>
+        <MatrixEffect numRows={50} numCols={20} />
         </div>
       </div>
     </div>
