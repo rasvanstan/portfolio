@@ -4,7 +4,6 @@ import BackgroundContext from './BackgroundContext';
 import { gsap } from "gsap";
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Home.css';
 
-
 function Home() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);
   const containerRef = useRef(null);
@@ -67,12 +66,16 @@ function Home() {
           </span>,
           I'm on a mission to create web solutions that captivate and innovate, blending analytical thinking with a touch of artistry. If you want to learn more about my educational background and past experiences, simply click to view my
           <a href="#" data-replace="get a link" onClick={openResume}>
+            
             <span className='resume'>
               RESUME.
             </span>
+
           </a>
         </p>
       </div>
+      <img src="../src/assets/html.jpeg" alt="" />
+
     </div>
   );
 }

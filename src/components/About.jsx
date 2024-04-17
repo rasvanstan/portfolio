@@ -54,7 +54,10 @@ function About() {
           </p>
            </div>
         </div>
-        <div className="column3">Content for third column</div>
+        <div className="column3">
+          Content for third column
+
+        </div>
       </div>
     </div>
   );

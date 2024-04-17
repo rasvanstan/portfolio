@@ -1,6 +1,6 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Footer.css'
+import '../styles/RightNavBar.css'
 
 
 function Footer() {
