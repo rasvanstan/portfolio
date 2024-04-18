@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/About.css';
 import MatrixEffect from './MatrixEffect';
 
 function About() {
+  // eslint-disable-next-line no-unused-vars
   const [matrixVisible, setMatrixVisible] = useState(true);
   const matrixContainerRef = useRef(null);
 

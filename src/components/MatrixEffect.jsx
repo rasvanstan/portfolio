@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 // MatrixEffect.css styles can be used as is
 
@@ -55,6 +55,7 @@ class Effect {
   }
 }
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 const MatrixEffect = ({ numRows, numCols }) => {
   const containerRef = useRef(null);
 
