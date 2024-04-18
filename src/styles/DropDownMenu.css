@@ -24,7 +24,6 @@
     transition: 0.3s;
     display: block;
   } */ */
-
   
   nav {
     position: absolute;
@@ -40,8 +39,8 @@
     left: 0;
     bottom: 0;
     width: 300px;
-    background-color: rgba(51, 51, 51, 0.8); 
-   }
+    background-color: rgba(51, 51, 51, 0.8);
+  }
   
   button {
     outline: none;
@@ -51,12 +50,12 @@
     -ms-user-select: none;
     cursor: pointer;
     position: absolute;
-    top: 18px;
+    top: 15px;
     left: 15px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: white;
+    background-color: #fff;
   }
   
   ul,
@@ -110,3 +109,13 @@
     cursor: pointer;
   }
   
+
+
+.toggle-menu {
+  background-color: black;
+  position: relative;
+  top: 10%; /* Adjust as needed */
+  left: 10%; /* Adjust as needed */
+}
+
+

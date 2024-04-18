@@ -1,28 +1,28 @@
-import "./styles/App.css"
-import LeftNavBar from './components/LeftNavBar';
+import "./styles/App.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BackgroundProvider } from './components/BackgroundContext';
+import DropDownMenu from './components/DropDownMenu';
 import Home from './components/Home';
 import MyProjects from './components/MyProjects';
 import About from './components/About';
 import Contact from './components/Contact';
-import { BackgroundProvider } from './components/BackgroundContext';
 import RightNavBar from './components/RightNavBar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-   return (
-     <BackgroundProvider>
-       <Router>
-           <LeftNavBar />
-         <Routes>
-           <Route path="/" element={<Home />} />
-           <Route path="/projects" element={<MyProjects />} />
-           <Route path="/about" element={<About />} />
-           <Route path="/contact" element={<Contact />} />
-         </Routes>
-         <RightNavBar />
-       </Router>
-     </BackgroundProvider>
-   );
- }
+ return (
+    <BackgroundProvider>
+      <Router>
+        <DropDownMenu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<MyProjects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <RightNavBar />
+      </Router>
+    </BackgroundProvider>
+ );
+}
 
 export default App;

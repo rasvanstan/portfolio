@@ -3,7 +3,7 @@ import { motion, useCycle } from "framer-motion";
 import UseDimensions from "./UseDimensions";
 import MenuToggle from "./MenuToggle";
 import Navigation from "./Navigation";
-import '../styles/LeftNavBar.css'
+import '../styles/DropDownMenu.css';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -25,7 +25,7 @@ const sidebar = {
   }
 };
 
-const LeftNavBar = () => {
+const DropDownMenu = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = UseDimensions(containerRef);
@@ -44,4 +44,4 @@ const LeftNavBar = () => {
   );
 };
 
-export default LeftNavBar;
+export default DropDownMenu;
