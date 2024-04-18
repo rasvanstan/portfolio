@@ -32,7 +32,7 @@ function About() {
             Despite pursuing my dream to fly, the desire to delve deeper into the world of technology never waned. After several fulfilling years in aviation, I made the decision to transition back to my roots in web development. It was a leap of faith fueled by my unwavering passion for coding and a longing to immerse myself in the ever-evolving digital landscape.
             <br />
             <br />
-            Returning to the realm of web development feels like coming home - a space where I can combine my technical skills with my innate creativity to craft meaningful digital experiences. My journey from the skies to the screen has been one of self-discovery, growth, and a testament to the belief that following one's passion knows no bounds.
+            Returning to the realm of web development feels like coming home - a space where I can combine my technical skills with my innate creativity to craft meaningful digital experiences. My journey from the skies to the screen has been one of self-discovery, growth, and a testament to the belief that following one passion knows no bounds.
           </p>
         </div>
       </div>
