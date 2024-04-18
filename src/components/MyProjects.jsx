@@ -29,6 +29,7 @@ function MyProjects() {
           height: '100vh',
         }}
       >
+
         <motion.div 
         className='parent'
         layout
@@ -36,7 +37,12 @@ function MyProjects() {
         initial={{ borderRadius: 50 }}
         onClick={() => setIsOpen(!isOpen)}
         >
-          <motion.div layout className="child" />
+          <h1>my Projects</h1>
+
+          <motion.div layout className="child">
+          </motion.div>
+
+
         </motion.div>
       </div>
     </div>
