@@ -1,41 +1,40 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { motion } from "framer-motion";
 import BackgroundContext from './BackgroundContext';
-import '../styles/Contact.css';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Myprojects.css'
 
-function Contact() {
+function MyProjects() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);
-  const [prevPhotoIndex, setPrevPhotoIndex] = useState(-1);
-
-  useEffect(() => {
-    if (currentPhotoIndex !== prevPhotoIndex) {
-      setPrevPhotoIndex(currentPhotoIndex);
-    }
-  }, [currentPhotoIndex, prevPhotoIndex]);
 
   return (
-    <div className="contact-container">
-      <TransitionGroup>
-        <CSSTransition
-          key={currentPhotoIndex}
-          classNames="fade"
-          timeout={1000} // Duration of the transition
-        >
-          <div
-            className="background-container"
-            style={{
-              backgroundImage: `url(${photos[currentPhotoIndex]})`,
-            }}
-          >
-            <div className="content">
-              <h1>Contact Me</h1>
-              <p>This is where users can find ways to contact you.</p>
-            </div>
-          </div>
-        </CSSTransition>
-      </TransitionGroup>
+    
+    <div>
+      <img
+        src={photos[currentPhotoIndex]}
+        alt="Background"
+        loading="lazy"
+        style={{
+          display: 'none', // Hide the actual image, it's used for lazy loading
+        }}
+      />
+      <div
+        style={{
+          backgroundImage: `url(${photos[currentPhotoIndex]})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          width: '100vw',
+          height: '100vh',
+        }}
+      >
+        <div>
+          <h2>Contact me</h2>
+        </div>
+
+
+      </div>
     </div>
   );
 }
 
-export default Contact;
+export default MyProjects;

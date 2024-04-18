@@ -3,7 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import '../styles/RightNavBar.css'
 
 
-function Footer() {
+function RightNabvbar() {
   return (
     <div className="icon-container">
       <a href="https://github.com/rasvanstan" target="_blank" rel="noopener noreferrer">
@@ -16,4 +16,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default RightNabvbar;
