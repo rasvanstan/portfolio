@@ -1,37 +1,7 @@
-.matrix-container {
-    position: relative;
-    width: 150%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -11rem;
-   }
-   
-   .column {
-    display: flex;
-    flex-direction: column;
-    width: 4.5%; /* Adjust this value based on how many columns you want */
-    height: 100%;
-   }
-   
-   .matrix-container span {
-    position: relative;
-    color: #0f0;
-    font-family: 'Courier New', monospace;
-    font-size: 12px;
-    line-height: 1;
-    animation: fall 5s linear infinite;
-   }
-   
-   @keyframes fall {
-     0% {
-       transform: translateY(-100%);
-       opacity: 0.8;
-    }
-     100% {
-       transform: translateY(100vh);
-       opacity: 1;
-    }
-   }
-   
+.matrix-effect-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  

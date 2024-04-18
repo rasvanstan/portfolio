@@ -1,39 +1,43 @@
-/* eslint-disable react/no-unescaped-entities */
-import { useContext } from 'react';
-import BackgroundContext from './BackgroundContext';
+import React, { useEffect, useRef, useState } from 'react';
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/About.css';
 import MatrixEffect from './MatrixEffect';
 
 function About() {
-  const { currentPhotoIndex, photos } = useContext(BackgroundContext);
+  const [matrixVisible, setMatrixVisible] = useState(true);
+  const matrixContainerRef = useRef(null);
+
+  useEffect(() => {
+    const matrixContainer = matrixContainerRef.current;
+
+    const handleScroll = () => {
+      const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrollPercentage >= 0.7) {
+        setMatrixVisible(false);
+      } else {
+        setMatrixVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div>
-      <img
-        src={photos[currentPhotoIndex]}
-        alt="Background"
-        loading="lazy"
-        style={{
-          display: 'none', // Hide the actual image, it's used for lazy loading
-        }}
-      />
       <div
-        className='container-about'
-        style={{
-          backgroundImage: `url(${photos[currentPhotoIndex]})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          width: '100vw',
-          height: '100vh'
-        }}
+        className={`container-about ${matrixVisible ? 'matrix-visible' : 'matrix-hidden'}`}
       >
         <div className="column1">
+          {/* Your left side content */}
           <img className='plane1' src="../src/assets/plane1.jpeg" alt="raz on a trolley in the aircraft"/>
           <img className='plane2' src="../src/assets/plane2.jpeg" alt="raz in front of the engine"/>
           <img className='plane3' src="../src/assets/plane3.jpeg" alt="raz kissing the engine"/>
         </div>
         <div className="column2">
+          {/* Your right side content */}
           <h1 className='title-column2'>So who am I?          <br />
            <span className='subtitle'>A story from aviation to coding</span></h1>
            <div className='container-content'>
@@ -55,8 +59,8 @@ function About() {
           </p>
            </div>
         </div>
-        <div id = 'matrixCanvas'>
-        <MatrixEffect numRows={50} numCols={20} />
+        <div ref={matrixContainerRef} className="matrix-container">
+          <MatrixEffect numRows={50} numCols={20} />
         </div>
       </div>
     </div>
