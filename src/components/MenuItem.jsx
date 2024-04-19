@@ -18,11 +18,11 @@ const variants = {
  }
 };
 
-const colors = ["#FFA500", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+const colors = ["#FFA500"];
 
 const MenuItem = ({ path, text, icon }) => { // Add icon prop here
  const navigate = useNavigate(); // Use useNavigate hook
- const style = { border: `2px solid ${colors[0]}` }; // Assuming a single color for simplicity
+//  const style = { border: `2px solid ${colors[0]}` }; // Assuming a single color for simplicity
 
  const handleClick = () => {
     navigate(path); // Navigate to the specified path
@@ -35,10 +35,10 @@ const MenuItem = ({ path, text, icon }) => { // Add icon prop here
       whileTap={{ scale: 0.95 }}
       onClick={handleClick} // Handle onClick event
     >
-      <div className="icon-placeholder" style={style}>
+      <div className="icon-placeholder">
         {icon} {/* Render the icon */}
       </div>
-      <div className="text-placeholder" style={style}>
+      <div className="text-placeholder">
         {text}
       </div>
     </motion.li>

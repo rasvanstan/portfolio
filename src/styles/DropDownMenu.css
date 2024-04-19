@@ -78,24 +78,17 @@
     align-items: center;
     cursor: pointer;
   }
+
   
-  /* .icon-placeholder {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    flex: 40px 0;
-    margin-right: 20px;
-  } */
-  
-  .text-placeholder {
+  .icon-placeholder , .text-placeholder {
     border-radius: 5px;
     width: 300px;
     height: 25px;
-    flex: 1;
     font-weight: 900;  
+    padding:1rem;
   }
   
-  .refresh {
+  /* .refresh {
     padding: 10px;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
@@ -109,7 +102,7 @@
     align-items: center;
     cursor: pointer;
   }
-  
+   */
 
 
 .toggle-menu {
