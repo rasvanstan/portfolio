@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { motion } from "framer-motion";
 import BackgroundContext from './BackgroundContext';
 import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Myprojects.css'
 

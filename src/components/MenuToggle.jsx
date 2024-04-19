@@ -11,7 +11,9 @@ const Path = (props) => (
  />
 );
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 const MenuToggle = ({ toggle, isOpen }) => {
+ // eslint-disable-next-line no-unused-vars
  const navigate = useNavigate(); // Use useNavigate hook
 
  const handleClick = () => {
@@ -21,19 +23,19 @@ const MenuToggle = ({ toggle, isOpen }) => {
  return (
     <button
       onClick={handleClick}
-      style={{
-        backgroundColor: isOpen ? "rgba(51, 51, 51, 0.8)" : "white",
-        borderRadius: "50%",
-        width: "50px",
-        height: "50px",
-        border: "none",
-        cursor: "pointer",
-        position: "absolute",
-        top: "18px",
-        left: "15px",
-      }}
+    //   style={{
+    //     backgroundColor: isOpen ? "rgba(51, 51, 51, 0.8)" : "white",
+    //     borderRadius: "50%",
+    //     width: "50px",
+    //     height: "50px",
+    //     border: "none",
+    //     cursor: "pointer",
+    //     position: "absolute",
+    //     top: "18px",
+    //     left: "15px",
+    //   }}
     >
-      <svg width="23" height="23" viewBox="0 0 23 23">
+      <svg width="27" height="25" viewBox="0 0 23 17">
         <Path
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },

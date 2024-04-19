@@ -9,7 +9,8 @@ function About() {
 
 
   return (
-    <div className={`container-about ${matrixVisible ? 'matrix-visible' : 'matrix-hidden'}`}>
+    <>
+        <div className={`container-about ${matrixVisible ? 'matrix-visible' : 'matrix-hidden'}`}>
       <div className="column1">
         {/* Your left side content */}
         <img className='plane1' src="../src/assets/plane1.jpeg" alt="raz on a trolley in the aircraft"/>
@@ -36,10 +37,15 @@ function About() {
           </p>
         </div>
       </div>
-      <div ref={matrixContainerRef} className="matrix-container">
-        <MatrixEffect numRows={50} numCols={20} />
-      </div>
     </div>
+    <div ref={matrixContainerRef} className="matrix-container">
+                  <MatrixEffect numRows={50} numCols={20} />
+
+      </div>
+
+
+    </>
+
   );
 }
 

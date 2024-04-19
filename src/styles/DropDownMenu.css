@@ -38,7 +38,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 200px;
     background-color: rgba(51, 51, 51, 0.8);
   }
   
@@ -52,8 +52,8 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #fff;
   }
@@ -79,19 +79,20 @@
     cursor: pointer;
   }
   
-  .icon-placeholder {
+  /* .icon-placeholder {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     flex: 40px 0;
     margin-right: 20px;
-  }
+  } */
   
   .text-placeholder {
     border-radius: 5px;
-    width: 200px;
-    height: 20px;
+    width: 300px;
+    height: 25px;
     flex: 1;
+    font-weight: 900;  
   }
   
   .refresh {
