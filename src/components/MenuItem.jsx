@@ -20,9 +20,8 @@ const variants = {
 
 const colors = ["#FFA500"];
 
-const MenuItem = ({ path, text, icon }) => { // Add icon prop here
+const MenuItem = ({ path, text, icon, iconClassName }) => { // Add iconClassName prop here
  const navigate = useNavigate(); // Use useNavigate hook
-//  const style = { border: `2px solid ${colors[0]}` }; // Assuming a single color for simplicity
 
  const handleClick = () => {
     navigate(path); // Navigate to the specified path
@@ -35,10 +34,8 @@ const MenuItem = ({ path, text, icon }) => { // Add icon prop here
       whileTap={{ scale: 0.95 }}
       onClick={handleClick} // Handle onClick event
     >
-      <div className="icon-placeholder">
-        {icon} {/* Render the icon */}
-      </div>
       <div className="text-placeholder">
+        {icon && <span className={iconClassName}>{icon}</span>} {/* Check if icon exists */}
         {text}
       </div>
     </motion.li>

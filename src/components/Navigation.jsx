@@ -14,7 +14,7 @@ const variants = {
 const Navigation = () => (
  <motion.ul variants={variants}>
     {itemIds.map((item, index) => (
-      <MenuItem key={index} path={item.path} text={item.text} icon={item.icon} />
+      <MenuItem key={index} path={item.path} text={item.text} icon={item.icon} iconClassName="icon" />
     ))}
  </motion.ul>
 );
