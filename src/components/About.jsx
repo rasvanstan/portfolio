@@ -1,9 +1,11 @@
 import { useRef, useState } from 'react';
 import '../styles/About.css';
+import { Link } from 'react-router-dom';
 import MatrixEffect from './MatrixEffect';
 import plane1 from "/assets/plane1.jpeg"
 import plane2 from "/assets/plane2.jpeg"
-import plane3 from "/public/assets/plane3.jpeg"
+import plane3 from "/assets/plane3.jpeg"
+import { IoMdArrowBack } from "react-icons/io";
 
 
 function About() {
@@ -38,7 +40,11 @@ function About() {
             <br />
             <br />
             Returning to the realm of web development feels like coming home - a space where I can combine my technical skills with my innate creativity to craft meaningful digital experiences. My journey from the skies to the screen has been one of self-discovery, growth, and a testament to the belief that following one passion knows no bounds.
+            <Link to="/"> {/* Use Link component to navigate to home page */}
+            <button className='home-button'>Back <IoMdArrowBack /></button> {/* Button to navigate to home page */}
+            </Link>
           </p>
+
         </div>
       </div>
     </div>
