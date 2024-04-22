@@ -28,12 +28,12 @@ export const BackgroundProvider = ({ children }) => {
     // Load images dynamically
     const loadImages = async () => {
       const imagePaths = [
-        '/assets/backgroundimage1.webp',
-        '/assets/backgroundimage2.webp',
-        '/assets/backgroundimage3.webp',
-        '/assets/backgroundimage4.webp',
-        '/assets/backgroundimage5.webp',
-        '/assets/backgroundimage6.webp',
+        'public/assets/backgroundimage1.webp',
+        'public/assets/backgroundimage2.webp',
+        'public/assets/backgroundimage3.webp',
+        'public/assets/backgroundimage4.webp',
+        'public/assets/backgroundimage5.webp',
+        'public/assets/backgroundimage6.webp',
       ];
       const loadedImages = await Promise.all(imagePaths.map(path => importImage(process.env.PUBLIC_URL + path)));
       setPhotos(loadedImages);
