@@ -41,7 +41,16 @@ function About() {
             <br />
             Returning to the realm of web development feels like coming home - a space where I can combine my technical skills with my innate creativity to craft meaningful digital experiences. My journey from the skies to the screen has been one of self-discovery, growth, and a testament to the belief that following one passion knows no bounds.
             <Link to="/"> {/* Use Link component to navigate to home page */}
-            <button className='home-button'>Back <IoMdArrowBack /></button> {/* Button to navigate to home page */}
+            <button style={{
+              backgroundColor: 'transparent',
+              fontSize: '1.5rem',
+              fontWeight: '700',
+              width: '6rem',
+              position: 'relative',
+              left: '90%',
+              marginTop: '1.5rem',
+              border:'none'
+            }}>Back <IoMdArrowBack /></button> {/* Button to navigate to home page */}
             </Link>
           </p>
 

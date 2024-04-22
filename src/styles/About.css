@@ -91,7 +91,7 @@
 }
 
 
-#home-button {
+/* #home-button {
     background-color: transparent;
     font-size: 1.5rem;
     font-weight: 700;
@@ -99,15 +99,16 @@
     position: relative;
     left:90%;
     margin-top: -1.5rem;
-}
+} */
 button::before {
     content: '';
     background-color: #0aff0a;
     position: absolute;
-    left: -5%;
+    bottom:65%;
+    left: -10%;
     bottom: 0.5rem;
     width: 100%;
-    height: 0.5rem;
+    height: 0.2rem;
     z-index: -1;
     transition: all 0.3s ease-in-out;
     margin-left: 0.5rem;
@@ -115,5 +116,5 @@ button::before {
 
 button:hover::before {
     bottom: 0;
-    height: 80%;
+    height: 90%;
   }
