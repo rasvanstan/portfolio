@@ -23,17 +23,17 @@ const MenuToggle = ({ toggle, isOpen }) => {
  return (
     <button
       onClick={handleClick}
-    //   style={{
-    //     backgroundColor: isOpen ? "rgba(51, 51, 51, 0.8)" : "white",
-    //     borderRadius: "50%",
-    //     width: "50px",
-    //     height: "50px",
-    //     border: "none",
-    //     cursor: "pointer",
-    //     position: "absolute",
-    //     top: "18px",
-    //     left: "15px",
-    //   }}
+      style={{
+        backgroundColor: isOpen ? "rgba(51, 51, 51, 0.8)" : "white",
+        borderRadius: "50%",
+        width: "50px",
+        height: "50px",
+        border: "none",
+        cursor: "pointer",
+        position: "absolute",
+        top: "18px",
+        left: "15px",
+      }}
     >
       <svg width="27" height="25" viewBox="0 0 23 17">
         <Path

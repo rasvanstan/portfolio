@@ -1,0 +1,80 @@
+.form-container {
+    font-size: 1rem;
+    width: 50vw;
+    background-color: transparent;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    display: flex; /* Add display flex to center the .form */
+    justify-content: center;
+    flex-direction: column; /* Center the .form horizontally */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the .form vertically */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  h2 {
+    padding: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem; /* Add some space between label and input */
+  }
+  
+  input,
+  textarea {
+    width: 30vw;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0.7rem;
+  }
+  
+  textarea {
+    width: 30vw;
+    height: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0.7rem; 
+  }
+  
+  #submit-button::before,
+  #submit-button::after {
+    content: none;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    height: auto;
+    /* color: white; */
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+   }
+   
