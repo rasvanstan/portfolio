@@ -1,6 +1,4 @@
-import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
-import UseDimensions from "./UseDimensions";
 import MenuToggle from "./MenuToggle";
 import Navigation from "./Navigation";
 import '../styles/DropDownMenu.css';

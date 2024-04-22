@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import { useContext } from 'react'; // Import useContext
-import BackgroundContext from './BackgroundContext'; // Import BackgroundContext
 
 const variants = {
   open: {
