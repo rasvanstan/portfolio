@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, useEffect } from 'react';
 import backgroundimage1 from '/assets/backgroundimage1.webp';
 import backgroundimage2 from '/assets/backgroundimage2.webp';
@@ -8,7 +9,6 @@ import backgroundimage6 from '/assets/backgroundimage6.webp';
 
 const BackgroundContext = createContext();
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useBackground = () => {
   const context = useContext(BackgroundContext);
   if (!context) {
