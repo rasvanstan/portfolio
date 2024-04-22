@@ -23,7 +23,7 @@ function Home() {
   }, []);
 
   const openResume = () => {
-    const resumePath = './public/Razvan Stan_CV.pdf';
+    const resumePath = './publRazvan Stan_CV.pdf';
     window.open(resumePath, '_blank');
   };
 
@@ -38,7 +38,7 @@ function Home() {
       <div className="left-column">
         <img
           className="text-flicker-in-glow"
-          src="./public/logo.svg"
+          src="../src/assets/logo.svg"
           alt="Your Logo"
           style={{ width: '100%' }}
         />
@@ -52,7 +52,7 @@ function Home() {
         }} ref={containerRef}>
           <img
             className="cv-foto"
-            src="./public/raz_b&w.jpeg"
+            src="../src/assets/raz_b&w.jpeg"
             alt="Your Photo"
             style={{ width: '100%', borderRadius: '50%' }} // Set image width to 100%
           />

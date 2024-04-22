@@ -11,6 +11,7 @@ const variants = {
  },
 };
 
+// eslint-disable-next-line react/prop-types
 const Navigation = ({ isOpen }) => ( // Pass isOpen prop
   <motion.ul variants={variants}>
     {isOpen && itemIds.map((item, index) => (
