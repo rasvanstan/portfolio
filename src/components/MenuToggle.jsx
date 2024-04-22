@@ -31,7 +31,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
         border: "none",
         cursor: "pointer",
         position: "absolute",
-        top: "18px",
+        top: "15px",
         left: "15px",
       }}
     >
