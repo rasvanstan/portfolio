@@ -1,13 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, useEffect } from 'react';
-import backgroundimage1 from '../../public/assets/backgroundimage1.webp'
-import backgroundimage2 from '../../public/assets/backgroundimage2.webp'
-import backgroundimage3 from '../../public/assets/backgroundimage3.webp'
-import backgroundimage4 from '../../public/assets/backgroundimage4.webp'
-import backgroundimage5 from '../../public/assets/backgroundimage5.webp'
-import backgroundimage6 from '../../public/assets/backgroundimage6.webp'
-
+import backgroundimage1 from `${process.env.PUBLIC_URL}/assets/backgroundimage1.webp`;
+import backgroundimage2 from `${process.env.PUBLIC_URL}/assets/backgroundimage2.webp`;
+import backgroundimage3 from `${process.env.PUBLIC_URL}/assets/backgroundimage3.webp`;
+import backgroundimage4 from `${process.env.PUBLIC_URL}/assets/backgroundimage4.webp`;
+import backgroundimage5 from `${process.env.PUBLIC_URL}/assets/backgroundimage5.webp`;
+import backgroundimage6 from `${process.env.PUBLIC_URL}/assets/backgroundimage6.webp`;
 
 const BackgroundContext = createContext();
 
