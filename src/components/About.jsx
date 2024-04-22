@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import '../styles/About.css';
 import MatrixEffect from './MatrixEffect';
+import plane1 from "../../public/assets/plane1.jpeg"
 
 function About() {
   // eslint-disable-next-line no-unused-vars
@@ -13,9 +14,9 @@ function About() {
         <div className={`container-about ${matrixVisible ? 'matrix-visible' : 'matrix-hidden'}`}>
       <div className="column1">
         {/* Your left side content */}
-        <img className='plane1' src="../src/assets/plane1.jpeg" alt="raz on a trolley in the aircraft"/>
-        <img className='plane2' src="../src/assets/plane2.jpeg" alt="raz in front of the engine"/>
-        <img className='plane3' src="../src/assets/plane3.jpeg" alt="raz kissing the engine"/>
+        <img className='plane1' src={plane1} alt="raz on a trolley in the aircraft"/>
+        <img className='plane2' src="../public/assets/plane2.jpeg" alt="raz in front of the engine"/>
+        <img className='plane3' src="../public/assets/plane3.jpeg" alt="raz kissing the engine"/>
       </div>
       <div className="column2">
         {/* Your right side content */}
