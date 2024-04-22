@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { SiCss3, SiHtml5, SiNodedotjs,SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Home.css';
+import '../styles/Home.css';
 
 function Home() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);

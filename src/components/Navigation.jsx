@@ -11,12 +11,12 @@ const variants = {
  },
 };
 
-const Navigation = () => (
- <motion.ul variants={variants}>
-    {itemIds.map((item, index) => (
+const Navigation = ({ isOpen }) => ( // Pass isOpen prop
+  <motion.ul variants={variants}>
+    {isOpen && itemIds.map((item, index) => (
       <MenuItem key={index} path={item.path} text={item.text} icon={item.icon} iconClassName="icon" />
     ))}
- </motion.ul>
+  </motion.ul>
 );
 
 const itemIds = [

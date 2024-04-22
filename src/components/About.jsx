@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import '/home/dci-student/Desktop/Projects/portfolio/src/styles/About.css';
+import '../styles/About.css';
 import MatrixEffect from './MatrixEffect';
 
 function About() {

@@ -1,5 +1,4 @@
-
-.parent {
+.solar-system, .spotify-clone, .talk-buddy {
   background: white;
   width: 300px;
   height: 300px;
@@ -9,12 +8,14 @@
   background: url(/home/dci-student/Desktop/Projects/portfolio/src/assets/solarsystem.png);
   background-size: cover;
   background-position: center;
-  margin-left: 5rem;
+  margin-left: 10rem;
 }
 
-.parent[data-isOpen="true"] {
-  width: 600px;
-  height: 400px;
+.solar-system[data-isOpen="true"],
+.spotify-clone[data-isOpen="true"],
+.talk-buddy[data-isOpen="true"] {
+  width: 500px;
+  height: 300px;
 }
 
 .child {
@@ -23,6 +24,6 @@
   border-radius: 50%;
 }
 
-h1{
-    margin-top: -10rem;
+h1 {
+  margin-top: -10rem;
 }

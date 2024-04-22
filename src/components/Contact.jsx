@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import BackgroundContext from './BackgroundContext';
-import '/home/dci-student/Desktop/Projects/portfolio/src/styles/Myprojects.css'
+import '../styles/Myprojects.css'
 
 function MyProjects() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);

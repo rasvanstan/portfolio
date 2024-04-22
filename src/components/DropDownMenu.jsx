@@ -38,7 +38,7 @@ const DropDownMenu = () => {
       ref={containerRef}
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation />
+      <Navigation isOpen={isOpen} /> {/* Pass isOpen prop */}
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
