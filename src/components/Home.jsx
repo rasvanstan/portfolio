@@ -6,6 +6,9 @@ import { SiCss3, SiHtml5, SiNodedotjs,SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import '../styles/Home.css';
+import logo from "../../public/assets/logo.svg"
+import resume from "../../public/assets/Razvan Stan_CV.pdf"
+import raz from "../../public/assets/raz_b&w.jpeg"
 
 function Home() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);
@@ -23,8 +26,7 @@ function Home() {
   }, []);
 
   const openResume = () => {
-    const resumePath = './publRazvan Stan_CV.pdf';
-    window.open(resumePath, '_blank');
+    window.open(resume, '_blank');
   };
 
   return (
@@ -38,7 +40,7 @@ function Home() {
       <div className="left-column">
         <img
           className="text-flicker-in-glow"
-          src="../src/assets/logo.svg"
+          src={logo}
           alt="Your Logo"
           style={{ width: '100%' }}
         />
@@ -52,7 +54,7 @@ function Home() {
         }} ref={containerRef}>
           <img
             className="cv-foto"
-            src="../public/assets/raz_b&w.jpeg"
+            src={raz}
             alt="Your Photo"
             style={{ width: '100%', borderRadius: '50%' }} // Set image width to 100%
           />
