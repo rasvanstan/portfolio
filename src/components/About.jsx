@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 import '../styles/About.css';
 import MatrixEffect from './MatrixEffect';
-import plane1 from "../../public/assets/plane1.jpeg"
-import plane2 from "../../public/assets/plane2.jpeg"
-import plane3 from "../../public/assets/plane3.jpeg"
+import plane1 from "/assets/plane1.jpeg"
+import plane2 from "/assets/plane2.jpeg"
+import plane3 from "/public/assets/plane3.jpeg"
 
 
 function About() {

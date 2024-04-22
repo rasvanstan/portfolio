@@ -6,9 +6,9 @@ import { SiCss3, SiHtml5, SiNodedotjs,SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import '../styles/Home.css';
-import logo from "../../public/assets/logo.svg"
-import resume from "../../public/assets/Razvan Stan_CV.pdf"
-import raz from "../../public/assets/raz_b&w.jpeg"
+import logo from "/assets/logo.svg"
+import resume from "/assets/Razvan Stan_CV.pdf"
+import raz from "/assets/raz_b&w.jpeg"
 
 function Home() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);

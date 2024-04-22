@@ -8,6 +8,7 @@ import backgroundimage6 from '/assets/backgroundimage6.webp';
 
 const BackgroundContext = createContext();
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useBackground = () => {
   const context = useContext(BackgroundContext);
   if (!context) {
@@ -16,6 +17,7 @@ export const useBackground = () => {
   return context;
 };
 
+// eslint-disable-next-line react/prop-types
 export const BackgroundProvider = ({ children }) => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const photos = [

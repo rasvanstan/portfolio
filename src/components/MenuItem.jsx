@@ -21,8 +21,8 @@ const variants = {
 };
 
 // Define the array of colors
-const colors = ["#FFA500"];
 
+// eslint-disable-next-line react/prop-types
 const MenuItem = ({ path, text, icon, iconClassName }) => { // Add iconClassName prop here
   const navigate = useNavigate(); // Use useNavigate hook
   const { changeTheme } = useContext(BackgroundContext); // Get the changeTheme function from the context
