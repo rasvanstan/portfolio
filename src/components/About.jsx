@@ -49,7 +49,8 @@ function About() {
               position: 'relative',
               left: '90%',
               marginTop: '1.5rem',
-              border:'none'
+              border:'none',
+              cursor:'pointer'
             }}>Back <IoMdArrowBack /></button> {/* Button to navigate to home page */}
             </Link>
           </p>
