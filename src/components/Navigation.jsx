@@ -12,10 +12,10 @@ const variants = {
 };
 
 // eslint-disable-next-line react/prop-types
-const Navigation = ({ isOpen }) => ( // Pass isOpen prop
+const Navigation = ({ isOpen, toggleOpen }) => (
   <motion.ul variants={variants}>
     {isOpen && itemIds.map((item, index) => (
-      <MenuItem key={index} path={item.path} text={item.text} icon={item.icon} iconClassName="icon" />
+      <MenuItem key={index} path={item.path} text={item.text} icon={item.icon} iconClassName="icon" toggleOpen={toggleOpen} />
     ))}
   </motion.ul>
 );

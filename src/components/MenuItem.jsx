@@ -23,13 +23,12 @@ const variants = {
 // Define the array of colors
 
 // eslint-disable-next-line react/prop-types
-const MenuItem = ({ path, text, icon, iconClassName }) => { // Add iconClassName prop here
-  const navigate = useNavigate(); // Use useNavigate hook
-  const { changeTheme } = useContext(BackgroundContext); // Get the changeTheme function from the context
+const MenuItem = ({ path, text, icon, iconClassName, toggleOpen }) => {
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(path); // Navigate to the specified path
-    changeTheme(); // Call the changeTheme function when clicked
+    navigate(path);
+    toggleOpen(); // Call the toggleOpen function to close the dropdown menu
   };
 
   return (
@@ -37,10 +36,10 @@ const MenuItem = ({ path, text, icon, iconClassName }) => { // Add iconClassName
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      onClick={handleClick} // Handle onClick event
+      onClick={handleClick}
     >
       <div className="text-placeholder">
-        {icon && <span className={iconClassName}>{icon}</span>} {/* Check if icon exists */}
+        {icon && <span className={iconClassName}>{icon}</span>}
         {text}
       </div>
     </motion.li>

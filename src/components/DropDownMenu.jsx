@@ -27,18 +27,14 @@ const sidebar = {
 
 const DropDownMenu = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = useRef(null);
-  const { height } = UseDimensions(containerRef);
 
   return (
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation isOpen={isOpen} /> {/* Pass isOpen prop */}
+      <Navigation isOpen={isOpen} toggleOpen={toggleOpen} /> {/* Pass toggleOpen prop */}
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
