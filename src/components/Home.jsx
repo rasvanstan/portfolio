@@ -52,7 +52,7 @@ function Home() {
         }} ref={containerRef}>
           <img
             className="cv-foto"
-            src="../src/assets/raz_b&w.jpeg"
+            src="../public/assets/raz_b&w.jpeg"
             alt="Your Photo"
             style={{ width: '100%', borderRadius: '50%' }} // Set image width to 100%
           />
