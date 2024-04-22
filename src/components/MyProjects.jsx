@@ -2,6 +2,9 @@ import { useContext } from 'react';
 import { useState } from "react";
 import BackgroundContext from './BackgroundContext';
 import '../styles/Myprojects.css'
+import solarsystem from '/assets/solarsystem.png'
+import reactify from '/assets/reactify.png'
+import talkbuddy from '/assets/talkbuddy.png'
 
 function MyProjects() {
   const { currentPhotoIndex, photos } = useContext(BackgroundContext);
@@ -10,8 +13,6 @@ function MyProjects() {
     spotifyClone: false,
     talkBuddy: false
   });
-
- 
 
   return (
     <div className="main-container">
@@ -31,11 +32,9 @@ function MyProjects() {
       >
         <div className='grid-container'>
           <div className='solar-system-container grid-item'>
-            <div
-              className='solar-system'
-            >
-              <div className="child"></div>
-            </div>
+            <a href="https://myuniverseanimation.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src={solarsystem} className='solar-system'/>
+            </a>
           </div>
           <div className='info-container grid-item'>
             <section>
@@ -46,13 +45,9 @@ function MyProjects() {
             </section>
           </div>
           <div className='spotify-clone-container grid-item'>
-            <div
-              className='spotify-clone'
-              data-isOpen={isOpen.spotifyClone}
-              onClick={() => handleToggle('spotifyClone')}
-            >
-              <div className="child"></div>
-            </div>
+            <a href="https://reactify-chi.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src={reactify} className='spotify-clone'/>
+            </a>
           </div>
           <div className='info-container grid-item'>
             <section>
@@ -63,13 +58,9 @@ function MyProjects() {
             </section>
           </div>
           <div className='talk-buddy-container grid-item'>
-            <div
-              className='talk-buddy'
-              data-isOpen={isOpen.talkBuddy}
-              onClick={() => handleToggle('talkBuddy')}
-            >
-              <div className="child"></div>
-            </div>
+            <a href="https://talk-buddy-client.onrender.com/" target="_blank" rel="noopener noreferrer">
+              <img src={talkbuddy} className='talk-buddy' style={{backgroundSize:'cover'}}/>
+            </a>
           </div>
           <div className='info-container grid-item'>
             <section>
