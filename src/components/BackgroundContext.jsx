@@ -16,12 +16,12 @@ export const useBackground = () => {
 export const BackgroundProvider = ({ children }) => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const photos = [
-    "../src/assets/backgroundimage1.webp",
-    "../src/assets/backgroundimage2.webp",
-    "../src/assets/backgroundimage3.webp",
-    "../src/assets/backgroundimage4.webp",
-    "../src/assets/backgroundimage5.webp",
-    "../src/assets/backgroundimage6.webp",
+    "./public/backgroundimage1.webp",
+    "./public/backgroundimage2.webp",
+    "./public/backgroundimage3.webp",
+    "./public/backgroundimage4.webp",
+    "./public/backgroundimage5.webp",
+    "./public/backgroundimage6.webp",
   ];
   const [currentPath, setCurrentPath] = useState('/');
 
