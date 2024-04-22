@@ -2,6 +2,9 @@ import { useRef, useState } from 'react';
 import '../styles/About.css';
 import MatrixEffect from './MatrixEffect';
 import plane1 from "../../public/assets/plane1.jpeg"
+import plane2 from "../../public/assets/plane2.jpeg"
+import plane3 from "../../public/assets/plane3.jpeg"
+
 
 function About() {
   // eslint-disable-next-line no-unused-vars
@@ -15,8 +18,8 @@ function About() {
       <div className="column1">
         {/* Your left side content */}
         <img className='plane1' src={plane1} alt="raz on a trolley in the aircraft"/>
-        <img className='plane2' src="../public/assets/plane2.jpeg" alt="raz in front of the engine"/>
-        <img className='plane3' src="../public/assets/plane3.jpeg" alt="raz kissing the engine"/>
+        <img className='plane2' src={plane2} alt="raz in front of the engine"/>
+        <img className='plane3' src={plane3} alt="raz kissing the engine"/>
       </div>
       <div className="column2">
         {/* Your right side content */}
