@@ -29,7 +29,7 @@
 .solar-system, .spotify-clone, .talk-buddy {
   background: white;
   width: 100%;
-  height: 15rem;
+  height: 16rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,11 +37,11 @@
   border-radius: 2rem;
   margin-left: 2rem;
   cursor: pointer;
-  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  transition: transform 0.3s ease;
 }
 
 .solar-system:hover, .spotify-clone:hover, .talk-buddy:hover {
-  transform: scale(1.1); /* Increase size on hover */
+  transform: scale(1.1);
 }
 
 .solar-system[data-isOpen="true"], .spotify-clone[data-isOpen="true"], .talk-buddy[data-isOpen="true"] {
