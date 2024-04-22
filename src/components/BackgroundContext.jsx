@@ -33,6 +33,7 @@ export const BackgroundProvider = ({ children }) => {
   useEffect(() => {
     // Whenever the path changes, trigger a background change
     changeTheme();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPath]);
 
   const changeTheme = () => {
