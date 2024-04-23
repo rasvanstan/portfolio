@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter , Route, Routes, Navigate} from 'react-router-dom';
 import { BackgroundProvider } from './components/BackgroundContext';
 import DropDownMenu from './components/DropDownMenu';
 import Home from './components/Home';
@@ -18,6 +18,8 @@ function App() {
           <Route path="/projects" element={<MyProjects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <RightNavBar />
       </BrowserRouter>
