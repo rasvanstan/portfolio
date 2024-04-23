@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import BackgroundContext from './BackgroundContext';
 import '../styles/MyProjects.css';
-import solarsystem from '/assets/solarsystem.png';
-import reactify from '/assets/reactify.png';
-import talkbuddy from '/assets/talkbuddy.png';
+import solarsystemVideo from '/assets/solarsystem.mp4';
+import reactify from '/assets/reactify.mp4';
+import talkbuddyVideo from '/assets/talkbuddy.mp4';
 
 function MyProjects() {
     const { currentPhotoIndex, photos } = useContext(BackgroundContext);
@@ -14,7 +14,7 @@ function MyProjects() {
     const projects = [
         {
             title: 'The Solar System',
-            imgSrc: solarsystem,
+            imgSrc: solarsystemVideo,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
             link: 'https://myuniverseanimation.netlify.app/'
         },
@@ -22,13 +22,13 @@ function MyProjects() {
             title: 'Spotify Clone',
             imgSrc: reactify,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
-            link:'https://reactify-chi.vercel.app/'
+            link: 'https://reactify-chi.vercel.app/'
         },
         {
             title: 'Talk Buddy',
-            imgSrc: talkbuddy,
+            imgSrc: talkbuddyVideo,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
-            link:'https://talk-buddy-fullstack.onrender.com/'
+            link: 'https://talk-buddy-fullstack.onrender.com/'
         },
     ];
 
@@ -56,19 +56,30 @@ function MyProjects() {
                 <div className="carousel">
                     <button onClick={handlePrev} className="prev">&#10094;</button>
                     {projects.map((project, index) => (
-                        <div
-                            key={index}
-                            className={`slide ${index === currentSlide ? 'active' : ''}`}
-                        >
-                            <a href={project.link} target='blank'>
-                                <img
-                                    src={project.imgSrc}
-                                    alt={project.title}
-                                    className="carousel-image" 
-                                />
-                            </a>
-                        </div>
-                    ))}
+    <div
+        key={index}
+        className={`slide ${index === currentSlide ? 'active' : ''}`}
+    >
+        <a href={project.link} target='blank'>
+            <div className="video-mask">
+                {project.imgSrc.endsWith('.mp4') ? (
+                    <video className="carousel-video" autoPlay loop muted>
+                        <source src={project.imgSrc} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                ) : (
+                    <img
+                        src={project.imgSrc}
+                        alt={project.title}
+                        className="carousel-image" 
+                    />
+                )}
+            </div>
+        </a>
+    </div>
+))}
+
+
                     <button onClick={handleNext} className="next">&#10095;</button>
                 </div>
                 <div className="text">

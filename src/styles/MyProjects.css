@@ -6,7 +6,7 @@
   justify-content: center;
   height: 100vh;
   background-size: cover;
-  position: relative; /* Added */
+  position: relative;
 }
 
 .carousel {
@@ -25,16 +25,16 @@
   border: none;
   background-color: transparent;
   color: white;
-  font-size: 3.5rem; /* Increased font size */
+  font-size: 3.5rem;
   z-index: 1;
 }
 
 .prev {
-  left: 1rem; /* Moved left */
+  left: -0.2rem;
 }
 
 .next {
-  right: 1rem; /* Moved right */
+  right: -0.2rem;
 }
 
 .slide {
@@ -48,10 +48,17 @@
   opacity: 1;
 }
 
-.carousel-image {
-  width: 60vw; 
-  height: 55vh;
-  border-radius: 1rem; 
+.video-mask {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 59vh;
+}
+
+.carousel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video fills the container while maintaining aspect ratio */
 }
 
 .text {
@@ -81,7 +88,7 @@
 }
 
 .project-title {
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   margin-top: -6rem;
   width: 25vw;
   padding: 0.5rem;
