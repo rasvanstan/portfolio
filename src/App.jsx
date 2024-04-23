@@ -11,7 +11,7 @@ import RightNavBar from './components/RightNavBar';
 function App() {
  return (
     <BackgroundProvider>
-      <Router>
+      <Router basename="/">
         <DropDownMenu />
         <Routes>
           <Route path="/" element={<Home />} />
