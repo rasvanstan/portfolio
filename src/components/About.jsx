@@ -17,9 +17,9 @@ function About() {
         <div className={`container-about ${matrixVisible ? 'matrix-visible' : 'matrix-hidden'}`}>
       <div className="column1">
         {/* Your left side content */}
-        <img className='plane1' src={plane1} alt="raz on a trolley in the aircraft"/>
-        <img className='plane2' src={plane2} alt="raz in front of the engine"/>
-        <img className='plane3' src={plane3} alt="raz kissing the engine"/>
+        <img className='plane1 roll-in-blurred-right' src={plane1} alt="raz on a trolley in the aircraft"/>
+        <img className='plane2 roll-in-blurred-right2' src={plane2} alt="raz in front of the engine"/>
+        <img className='plane3 roll-in-blurred-right3' src={plane3} alt="raz kissing the engine"/>
       </div>
       <div className="column2">
         {/* Your right side content */}
