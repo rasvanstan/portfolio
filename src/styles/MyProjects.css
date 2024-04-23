@@ -1,0 +1,75 @@
+/* MyProjects.css */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.carousel-image {
+  width: 60vw; 
+  height: 55vh;
+  border-radius: 1rem; 
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.prev {
+  left: 0.5rem;
+}
+
+.next {
+  right: 0.5rem;
+}
+
+.text {
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.text h1 {
+  font-size: 2rem;
+}
+
+.text p {
+  font-size: 1rem;
+}
+
+.project-title {
+  margin-bottom:2rem;
+  margin-top: -6rem;
+
+}
