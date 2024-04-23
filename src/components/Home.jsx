@@ -60,7 +60,7 @@ function Home() {
           />
         </div>
 
-        <p style={{ width: '80%', marginTop: '50px' }}>
+        <p style={{ width: '80%', padding: '1.2rem', fontSize: '1.2rem', backgroundColor: 'transparent', opacity: 1, color: 'black', background: 'rgba(255, 255, 255, 0.4)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)', backdropFilter: 'blur(8.5px)', WebkitBackdropFilter: 'blur(6.5px)', borderRadius: '30px', border: '1px solid rgba(255, 255, 255, 0.18)', textAlign: 'justify', marginTop: '50px' }}>
           Exploring the world of
           <span className = "web-dev">
            Web Development

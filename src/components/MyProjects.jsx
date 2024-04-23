@@ -62,14 +62,14 @@ function MyProjects() {
                             <img
                                 src={project.imgSrc}
                                 alt={project.title}
-                                className="carousel-image" // Add class name here
+                                className="carousel-image" 
                             />
                         </div>
                     ))}
                     <button onClick={handleNext} className="next">&#10095;</button>
                 </div>
                 <div className="text">
-                    <p className='paragraph-text'>{projects[currentSlide].text}</p>
+                    <div className='paragraph-text' style ={{background:'none'}}>{projects[currentSlide].text}</div>
                 </div>
             </div>
         </div>
