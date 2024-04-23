@@ -16,16 +16,19 @@ function MyProjects() {
             title: 'The Solar System',
             imgSrc: solarsystem,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
+            link: 'https://myuniverseanimation.netlify.app/'
         },
         {
             title: 'Spotify Clone',
             imgSrc: reactify,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
+            link:'https://reactify-chi.vercel.app/'
         },
         {
             title: 'Talk Buddy',
             imgSrc: talkbuddy,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
+            link:'https://talk-buddy-fullstack.onrender.com/'
         },
     ];
 
@@ -49,21 +52,21 @@ function MyProjects() {
                 className="carousel-container"
                 style={{ backgroundImage: `url(${photos[currentPhotoIndex]})` }}
             >                    
-            <h1 className='project-title'>{projects[currentSlide].title}</h1>
-
+                <h1 className='project-title'>{projects[currentSlide].title}</h1>
                 <div className="carousel">
-                  
                     <button onClick={handlePrev} className="prev">&#10094;</button>
                     {projects.map((project, index) => (
                         <div
                             key={index}
                             className={`slide ${index === currentSlide ? 'active' : ''}`}
                         >
-                            <img
-                                src={project.imgSrc}
-                                alt={project.title}
-                                className="carousel-image" 
-                            />
+                            <a href={project.link} target='blank'>
+                                <img
+                                    src={project.imgSrc}
+                                    alt={project.title}
+                                    className="carousel-image" 
+                                />
+                            </a>
                         </div>
                     ))}
                     <button onClick={handleNext} className="next">&#10095;</button>
