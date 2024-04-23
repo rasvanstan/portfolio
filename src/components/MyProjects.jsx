@@ -13,21 +13,21 @@ function MyProjects() {
 
     const projects = [
         {
-            title: 'Spotify Clone',
-            imgSrc: reactify,
-            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
-            link: 'https://reactify-chi.vercel.app/'
-        },
-        {
             title: 'The Solar System',
             imgSrc: solarsystemVideo,
-            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
+            text: "Explore our HTML/CSS/Bootstrap Solar System, a three-week project by three students. Witness planet orbits animated with CSS and Bootstrap for responsiveness. Click planets for facts, interact seamlessly. Bootstrap ensures device compatibility. Collaboration highlights teamwork's power. Discover the wonders of our cosmic neighborhood in our portfolio, a testament to our growth and dedication as web development students.",
             link: 'https://myuniverseanimation.netlify.app/'
+        },
+        {
+            title: 'Spotify Clone',
+            imgSrc: reactify,
+            text: "Enter the world of Reactify, a Spotify clone crafted entirely in React in a nod to the music streaming giant. Accessing the Spotify personal token through Spotify for Developers, Reactify fetches real data from the user's Spotify account, ensuring a fully functional experience. Seamlessly integrated with Spotify's APIs, this project mirrors the functionality of the beloved platform. From browsing playlists to playing tracks, Reactify brings the Spotify experience to life within a React environment. Immerse yourself in the world of music with Reactify, where the power of React and Spotify's APIs combine to create a seamless and enjoyable listening experience.",
+            link: 'https://reactify-chi.vercel.app/'
         },
         {
             title: 'Talk Buddy',
             imgSrc: talkbuddyVideo,
-            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
+            text: "Embark on our journey with TalkBuddy, our pinnacle project intertwining technology and community for Berlin's language learners. As students, we poured our hearts into crafting a full-stack marvel, harnessing MongoDB for data storage, React for dynamic front-end functionality, and Sass for stylized beauty. In Figma, our design dreams took shape, shaping TalkBuddy's inviting UI.With secure login and registration features, users seamlessly navigate into vibrant chatrooms, fostering meaningful language exchanges. Each line of code symbolizes our dedication to facilitating connections in Berlin's diverse linguistic landscape.Through late-night coding sessions and design deliberations, TalkBuddy emerged—a testament to our growth and collaboration. Join our community today, where every click resonates with student-driven innovation, welcoming all to explore, connect, and learn.",
             link: 'https://talk-buddy-fullstack.onrender.com/'
         },
     ];
