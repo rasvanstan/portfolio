@@ -13,16 +13,16 @@ function MyProjects() {
 
     const projects = [
         {
-            title: 'The Solar System',
-            imgSrc: solarsystemVideo,
-            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
-            link: 'https://myuniverseanimation.netlify.app/'
-        },
-        {
             title: 'Spotify Clone',
             imgSrc: reactify,
             text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
             link: 'https://reactify-chi.vercel.app/'
+        },
+        {
+            title: 'The Solar System',
+            imgSrc: solarsystemVideo,
+            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit...',
+            link: 'https://myuniverseanimation.netlify.app/'
         },
         {
             title: 'Talk Buddy',
