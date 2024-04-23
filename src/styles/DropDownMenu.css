@@ -12,7 +12,6 @@
     padding: 1%;
     transition: 0.3s;
     list-style-type: none;
-    z-index: 10;
   } 
   
    .styled-link { 
@@ -31,6 +30,8 @@
     left: 0;
     bottom: 0;
     width: 300px;
+    z-index: 100;
+
   }
   
   .background {
@@ -100,6 +101,7 @@
   position: relative;
   top: 10%; /* Adjust as needed */
   left: 10%; /* Adjust as needed */
+  z-index: 999;
 }
 
 
