@@ -1,11 +1,9 @@
 import { useRef, useState } from 'react';
 import '../styles/About.css';
-import { Link } from 'react-router-dom';
 import MatrixEffect from './MatrixEffect';
 import plane1 from "/assets/plane1.jpeg"
 import plane2 from "/assets/plane2.jpeg"
 import plane3 from "/assets/plane3.jpeg"
-import { IoMdArrowBack } from "react-icons/io";
 
 
 function About() {
