@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import { BackgroundProvider } from './components/BackgroundContext';
 import DropDownMenu from './components/DropDownMenu';
 import Home from './components/Home';
@@ -11,7 +11,7 @@ import RightNavBar from './components/RightNavBar';
 function App() {
  return (
     <BackgroundProvider>
-      <Router basename="/">
+      <BrowserRouter>
         <DropDownMenu />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <RightNavBar />
-      </Router>
+      </BrowserRouter>
     </BackgroundProvider>
  );
 }
