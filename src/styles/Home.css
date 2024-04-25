@@ -182,18 +182,18 @@
    }
    .left-column {
     position: relative;
-    top:7%;
+    top:-3%;
     right:40%;
     width: 60%;
    }
    .middle-column {
-    margin-top: -4rem;
-    margin-bottom: 1rem;
+    margin-top: -80%;
+    margin-bottom: -2rem;
   }
    p {
     width:80vw;
     font-size: 1rem;
-    margin-top:-35%;
+    margin-top:-20%;
     line-height: 1.5rem;
    }
 
@@ -207,21 +207,21 @@
    .cv-foto {
     width:50%;
     position: relative;
-    top: 5%;
+    top: 3%;
    }
    .left-column {
     position: relative;
-    top:10%;
+    top:-7%;
     right:45%;
     width: 60%;
    }
 .middle-column {
-  margin-top: -4rem;
+  margin-top: -12rem;
 }
    p {
     width:80vw;
     font-size: 1rem;
-    margin-top:-50%;
+    margin-top:-40%;
     line-height: 1.1rem;
     font-size: 0.8rem;
    }
