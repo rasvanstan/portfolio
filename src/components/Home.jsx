@@ -42,25 +42,17 @@ function Home() {
           className="text-flicker-in-glow"
           src={logo}
           alt="Your Logo"
-          style={{ width: '100%' }}
         />
       </div>
       <div className="right-column">
-        <div className="middle-column" style={{
-          borderRadius: '50%',
-          overflow: 'hidden',
-          width: '22rem', // Set the width slightly bigger than the photo
-          height: '22rem', // Set the height slightly bigger than the photo
-        }} ref={containerRef}>
+        <div className="middle-column" ref={containerRef}>
           <img
             className="cv-foto"
             src={raz}
             alt="Your Photo"
-            style={{ width: '100%', borderRadius: '50%' }} // Set image width to 100%
           />
         </div>
-
-        <p style={{ width: '80%', padding: '1.2rem', fontSize: '1.2rem', backgroundColor: 'transparent', opacity: 1, color: 'black', background: 'rgba(255, 255, 255, 0.4)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)', backdropFilter: 'blur(8.5px)', WebkitBackdropFilter: 'blur(6.5px)', borderRadius: '30px', border: '1px solid rgba(255, 255, 255, 0.18)', textAlign: 'justify', marginTop: '50px' }}>
+        <p >
           Exploring the world of
           <span className = "web-dev">
            Web Development
@@ -71,6 +63,7 @@ function Home() {
           </span>,
           I'm on a mission to create web solutions that captivate and innovate, blending analytical thinking with a touch of artistry. If you want to learn more about my educational background and past experiences, simply click to view my
           <a href="#" data-replace="get a link" onClick={openResume}>
+            
             <span className='resume'>
               RESUME.
             </span>
