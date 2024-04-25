@@ -112,3 +112,34 @@
   margin-bottom: -0.5rem;
 }
 
+@media screen and (max-width: 768px) {
+
+  .project-title {
+    font-size: 1.2rem;
+    width:65vw;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+  }
+ .text{
+  height:15rem;
+  width:80vw;
+  margin-bottom: 1rem;
+  height: 60vh;
+ }
+
+ .carousel{
+  margin-top:2rem;
+ }
+ .carousel-video {
+  width:80vw;
+ }
+
+ .video-mask {
+  width:80vw;
+  height:30vh;
+ }
+.paragraph-text {
+  font-size: 0.8rem;
+  line-height: normal;
+}
+ }
