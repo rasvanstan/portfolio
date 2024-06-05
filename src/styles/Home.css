@@ -205,24 +205,25 @@
       flex-direction: column;
     }
    .cv-foto {
-    width:50%;
+    width:80%;
     position: relative;
-    top: 5%;
+    top:5%;
+  
    }
    .left-column {
     position: relative;
-    top:-7%;
-    right:45%;
-    width: 60%;
+    top:-3%;
+    right:40%;
+    width: 70%;
    }
 .middle-column {
-  margin-top: -12rem;
+  margin-top: -20rem;
 }
    p {
     width:80vw;
     font-size: 1rem;
-    margin-top:-40%;
     line-height: 1.1rem;
     font-size: 0.8rem;
+    margin-top: 1rem;
    }
   }
