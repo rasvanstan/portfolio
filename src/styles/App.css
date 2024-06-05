@@ -13,3 +13,9 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 430px) {
+  body {
+    overflow: scroll;
+  }
+}
+
