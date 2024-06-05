@@ -136,7 +136,7 @@
         }
     }
     
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 768px) {
         .container-about {
             display: flex;
             flex-direction: column;

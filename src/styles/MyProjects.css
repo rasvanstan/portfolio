@@ -113,7 +113,10 @@
 }
 
 @media screen and (max-width: 768px) {
-
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
   .project-title {
     font-size: 1.2rem;
     width:65vw;
@@ -123,7 +126,7 @@
  .text{
   height:15rem;
   width:80vw;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   height: 60vh;
  }
 
@@ -137,6 +140,7 @@
  .video-mask {
   width:80vw;
   height:30vh;
+  margin-bottom: -5rem;
  }
 .paragraph-text {
   font-size: 0.8rem;

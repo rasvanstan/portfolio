@@ -199,7 +199,7 @@
 
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 768px) {
     .container {
       display: flex;
       flex-direction: column;
@@ -207,7 +207,7 @@
    .cv-foto {
     width:50%;
     position: relative;
-    top: 3%;
+    top: 5%;
    }
    .left-column {
     position: relative;
