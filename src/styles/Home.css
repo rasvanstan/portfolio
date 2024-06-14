@@ -207,23 +207,23 @@
    .cv-foto {
     width:50%;
     position: relative;
-    top:20%;
+    top:2%;
   
    }
    .left-column {
     position: relative;
-    top:-5%;
+    top:-7%;
     right:40%;
     width: 70%;
    }
 .middle-column {
-  margin-top: -22rem;
+  margin-top: -20rem;
 }
    p {
     width:80vw;
     font-size: 1rem;
     line-height: 1.1rem;
     font-size: 0.8rem;
-    margin-top: 1rem;
+    margin-top: -3rem;
    }
   }
