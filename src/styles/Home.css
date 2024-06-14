@@ -178,7 +178,7 @@
       flex-direction: column;
     }
    .cv-foto {
-    width:60%;
+    width:40%;
    }
    .left-column {
     position: relative;
@@ -205,14 +205,14 @@
       flex-direction: column;
     }
    .cv-foto {
-    width:60%;
+    width:50%;
     position: relative;
-    top:15%;
+    top:20%;
   
    }
    .left-column {
     position: relative;
-    top:-3%;
+    top:-5%;
     right:40%;
     width: 70%;
    }
