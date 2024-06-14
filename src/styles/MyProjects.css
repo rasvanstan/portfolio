@@ -126,12 +126,12 @@
  .text{
   height:15rem;
   width:80vw;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
   height: 60vh;
  }
 
  .carousel{
-  margin-top:2rem;
+  margin-top:10rem;
  }
  .carousel-video {
   width:80vw;
@@ -140,7 +140,7 @@
  .video-mask {
   width:80vw;
   height:30vh;
-  margin-bottom: -5rem;
+  margin-bottom: 5rem;
  }
 .paragraph-text {
   font-size: 0.8rem;
