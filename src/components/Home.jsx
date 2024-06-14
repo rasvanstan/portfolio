@@ -69,17 +69,16 @@ function Home() {
             </span>
           </a>
           <br />
-          <div className='skills-icons'>
+         
+        </p>
+        <div className='skills-icons'>
           <SiHtml5 />
           <SiCss3 />
           <IoLogoJavascript />
           <FaReact />
           <SiNodedotjs />
           <SiMongodb />
-
           </div>
-        </p>
-
       </div>
     </div>
   );
